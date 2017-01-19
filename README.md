@@ -56,3 +56,33 @@ The task also assesses the programming logic. The code is expected to check is a
 
 ```
 
+## Binary Search
+
+The andelab test failed to run due to an error on the server end. One of the tests (test_missing_number_lab.py) performed passed on the local machine. The binary_search test had an error in two of the test parameters. 
+
+```python
+  
+ self.assertEqual(
+            0,
+            search2['count'],
+            msg='should return {count: 0, index: 19} for 40'
+        )
+self.assertEqual(
+            19,
+            search2['index'],
+            msg='should return {count: 5, index: 19} for 40'
+        )
+
+```
+The two test cases accept the same array input but test two different outputs for the same search input. Additionaly, the greater than 7 test should accept an output of 7.
+
+```python
+self.assertGreater(
+            7,
+            search3['count'],
+            msg='should return {count: 3, index: -1} for 10000'
+        )
+```
+## Missing Number Test
+
+Other than the Andelab test, the code passed all tests performed on the local machine.
