@@ -1,1 +1,4 @@
-{}
+{
+  "test_binary_search.py::BinarySearchTest::test_large_list_search": true,
+  "test_binary_search.py::BinarySearchTest::test_medium_list_search": true
+}
